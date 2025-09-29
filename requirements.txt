@@ -1,0 +1,21 @@
+# Sofia Integrated - Local Voice Agent Requirements
+
+# Local Voice Processing (from local-voice-ai-agent)
+fastrtc[stt]>=0.0.19
+kokoro-onnx>=0.4.7
+ollama>=0.4.7
+loguru>=0.7.3
+
+# Console Mode Audio
+pyaudio
+webrtcvad
+
+# Core Dependencies (from sofia-en)
+python-dotenv
+requests
+aiohttp
+numpy
+python-dateutil
+
+# Async support
+asyncio
