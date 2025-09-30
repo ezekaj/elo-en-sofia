@@ -1,0 +1,62 @@
+# Sofia Windows-Native Requirements
+# Minimal dependency set for Windows - NO C++ compilation needed!
+
+# ============================================
+# CORE: LLM Integration
+# ============================================
+ollama>=0.4.7
+
+# ============================================
+# CORE: Speech-to-Text (Whisper)
+# ============================================
+faster-whisper>=1.0.0
+# Uses CTranslate2 for optimized inference on Windows
+
+# ============================================
+# CORE: Text-to-Speech (Kokoro)
+# ============================================
+kokoro-onnx>=0.4.7
+onnxruntime>=1.20.0
+
+# ============================================
+# CORE: Audio I/O (Windows-optimized)
+# ============================================
+sounddevice>=0.4.6
+# Pure Python, pre-built wheels, WASAPI backend
+numpy>=1.24.0
+scipy>=1.10.0
+
+# ============================================
+# CORE: Voice Activity Detection
+# ============================================
+webrtcvad-wheels>=2.0.14
+# Pre-built wheels, no MSVC needed
+
+# ============================================
+# CORE: Web UI (Simplified)
+# ============================================
+gradio>=4.0.0
+fastapi>=0.100.0
+uvicorn>=0.20.0
+
+# ============================================
+# UTILITIES
+# ============================================
+loguru>=0.7.3
+python-dotenv>=1.0.0
+requests>=2.31.0
+aiohttp>=3.9.0
+python-dateutil>=2.8.0
+
+# ============================================
+# OPTIONAL: Windows-Native Features
+# ============================================
+# keyboard>=0.13.5        # Global hotkeys
+# pystray>=0.19.4         # System tray icon
+# pywin32>=306            # Windows API access
+
+# ============================================
+# TOTAL: ~15 core packages vs 80+ in original
+# SIZE: ~500MB vs 2GB
+# TIME: 2-3 minutes vs 10-15 minutes
+# ============================================

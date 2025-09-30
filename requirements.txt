@@ -8,7 +8,7 @@ loguru>=0.7.3
 
 # Console Mode Audio
 pyaudio
-webrtcvad
+webrtcvad-wheels
 
 # Core Dependencies (from sofia-en)
 python-dotenv
